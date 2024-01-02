@@ -1,0 +1,16 @@
+Variablen: Remaining_paths, Blocked_field, solved_field
+
+[[1, [current_floor, x, y], ">><<!!^v"]
+ [1, current_floor, ">><<!!^v"]
+]
+
+s = 1
+while True:
+    s ++
+    1. Dekrementiere benötigste Sekunden
+    2. Wenn 0, dann:
+        Überprüfe, ob Zug noch ausgeführt werden kann
+        Checke optionen nach rechts, links, oben, unten, toggle.
+        Falls nein: Field = B?
+        Falls nein: Entferne Pfad
+    3. Füge der Liste hinzu mit s = 1 für l,r,o,u und 3 für !, update blocked_field und solved_field
